@@ -1,0 +1,7 @@
+{
+  "name": "ElasPorElas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

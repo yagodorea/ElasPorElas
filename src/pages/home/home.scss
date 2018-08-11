@@ -22,20 +22,11 @@
   font-family: EllafinaBrush !important;
 }
 
-.no-webp .brush {
+.brush {
   width: 90vw;
   margin: 0 5vw;
   padding-bottom: 6%;
   background-image: url('../../assets/imgs/brush.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.webp .brush {
-  width: 90vw;
-  margin: 0 5vw;
-  padding-bottom: 6%;
-  background-image: url('../../assets/imgs/brush.webp');
   background-size: 100%;
   background-repeat: no-repeat;
 }

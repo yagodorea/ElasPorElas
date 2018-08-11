@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title class="titulo-nav">{{candidata.nome}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="masters">
+  <ion-grid style="max-width: 100vh;">
+    <ion-row>
+      <ion-col col-4>
+        <img src="{{candidata.foto_url}}" (click)=showImage(candidata.foto_url)/>
+      </ion-col>
+      <ion-col col-8>
+        <p class="descricao">{{candidata.nome}}</p>
+        <p class="descricao">{{candidata.numero}}</p>
+        <p class="descricao">{{candidata.cargo}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <p class="innerDescricao">{{candidata.descricao}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <button (click)="openPage(candidata.website)" ion-button block><ion-icon name="globe"></ion-icon></button>
+      </ion-col>
+      <ion-col col-3>
+        <button (click)="openPage(candidata.facebook)" ion-button block><ion-icon name="logo-facebook" size="large"></ion-icon></button>
+      </ion-col>
+      <ion-col col-3>
+        <button (click)="openPage(candidata.twitter)" ion-button block ><ion-icon name="logo-twitter"></ion-icon></button>
+      </ion-col>
+      <ion-col col-3>
+        <button (click)="openPage(candidata.instagram)" ion-button block><ion-icon name="logo-instagram"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController, Loading } from 'ionic-angular';
+import { CargosPage } from '../cargos/cargos';
+import { ListaService } from '../../providers/lista-service';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +9,29 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  loading: Loading;
 
+  constructor(
+    public navCtrl: NavController,
+    public listaService: ListaService,
+    public loadingCtrl: LoadingController
+  ) {
+    this.loading = loadingCtrl.create({
+      content: 'Carregando...',
+      spinner: 'dots'
+    });
+    this.loading.present();
+    listaService.fetchList(this.callback,this.loading);
   }
 
+  callback(loading) {
+    if(loading) {
+      loading.dismiss();
+    }
+  }
+
+  showClicked(state) {
+    console.log('stateClicked = ' + state);
+    this.navCtrl.push(CargosPage,{estado: state});
+  }
 }

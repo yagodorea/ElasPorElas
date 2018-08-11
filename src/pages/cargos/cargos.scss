@@ -1,0 +1,31 @@
+.fonte-cargos {
+  font-family: PantonBlackCaps !important;
+  text-align: center;
+  color: map-get($colors, primary);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  transition: 0.2s;
+}
+
+.fonte-cargos:hover {
+  font-family: PantonBlackCaps !important;
+  font-size: 5vmin;
+  text-align: center;
+  color: map-get($colors, primary);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.item-md,.item-ios,.item-wp {
+  h1 {
+    font-size: 4vmin;
+  }
+}
+
+.list {
+  width: 100%;
+}
+
+.grid {
+  padding: 0;
+}

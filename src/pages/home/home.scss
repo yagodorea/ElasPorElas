@@ -1,3 +1,164 @@
-page-home {
 
+.mapa-container {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+}
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.titulo-home {
+  padding-top: 1vh;
+  line-height: 75%;
+  width: 100%;
+  text-align: center;
+  font-size: 20vw;
+  color: #432a70;
+  font-family: EllafinaBrush !important;
+}
+
+.no-webp .brush {
+  width: 90vw;
+  margin: 0 5vw;
+  padding-bottom: 6%;
+  background-image: url('../../assets/imgs/brush.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.webp .brush {
+  width: 90vw;
+  margin: 0 5vw;
+  padding-bottom: 6%;
+  background-image: url('../../assets/imgs/brush.webp');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sobre {
+  margin-top: 0;
+  padding-top: 8%;
+  font-family: GothamBlack !important;
+  font-size: 6vw;
+  text-align: center;
+  color: map-get($colors, white);
+}
+
+@media only screen and (min-width: 600px){
+  .my-svg {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .mapa-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .titulo-home {
+    font-size: 8pc;
+  }
+  .brush {
+    max-width: 540px;
+  }
+  .sobre {
+    font-size: 2.4pc;
+  }
+}
+
+.estado-vermelho {
+  fill: #a61f46;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+  transition: 0.3s;
+}
+
+.estado-vermelho:hover {
+  fill: #d9285b;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+
+.estado-azul {
+  fill: #432a70;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+  transition: 0.3s;
+}
+
+.estado-azul:hover {
+  fill: #623da3;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+
+.estado-rosa {
+  fill: #bf5ea4;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+  transition: 0.3s;
+}
+
+.estado-rosa:hover {
+  fill: #f277d0;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+
+.estado-branco {
+  fill: #957fbb;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+  transition: 0.3s;
+}
+
+.estado-branco:hover {
+  fill: #bda1ed;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: #ffffff;
+  stroke-width: 0.3;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
 }

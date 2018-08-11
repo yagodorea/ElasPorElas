@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title class="titulo-nav">{{estado}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="masters">
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-list style="top: 10vw; max-width: 100vh;">
+        <ion-item sliding *ngFor="let cargo of cargosList" (click)="goToList(cargo)">
+          <h1 class="fonte-cargos">{{cargo}}</h1>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -13,7 +13,7 @@
   font-size: 5vmin;
   text-align: start;
   padding-inline-start: 10%;
-  color: #c0aec6;
+  color: map-get($colors, primary);
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -22,6 +22,10 @@
   h1 {
     font-size: 4vmin;
   }
+}
+
+.item-md:hover,.item-ios:hover,.item-wp:hover {
+  background-color: #c0aec6;
 }
 
 .list {

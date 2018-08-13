@@ -18,16 +18,21 @@
 .masters {
   background-color: #c0aec6;
   padding-top: 9rem;
+  display: grid;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .toolbar-title {
   font-size: 2.5rem;
+  margin-left: -32px;
   letter-spacing: -1px;
   font-family: GothamBold !important;
 }
 
 .platform-ios .toolbar-title {
-  font-size: 1rem;
+  margin-left: 0;
+  font-size: 1.4rem;
   letter-spacing: 0;
   font-family: GothamBold !important;
 }
@@ -56,7 +61,7 @@
   text-align: center;
   text-transform: uppercase;
   height: 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
   font-family: GothamBold !important;
 }

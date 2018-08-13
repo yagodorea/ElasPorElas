@@ -1,17 +1,32 @@
 .descricao {
-  font-family: PantonBlackCaps !important;
+  font-family: GothamBold !important;
   font-size: 4vmin;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1vw;
+  color: #3f1e66;
+}
+
+.numero {
+  font-family: GothamBold !important;
+  font-size: 6vmin;
   text-align: center;
   margin: 1vw;
   color: white;
 }
 
+.numero-container {
+  background-color: #3f1e66;
+  border-radius: 4vmin;
+  display: inline-block;
+  padding: 0 4vmin;
+}
+
 .innerDescricao {
-  font-family: GothamRoundedMedium !important;
-  font-size: 4vmin; 
+  font-family: GothamBold !important;
+  font-size: 4vmin;
   text-align: left;
-  color: white;
-  margin: 2vw;
+  color: #505050;
 }
 
 ion-icon {
@@ -20,8 +35,4 @@ ion-icon {
 
 .button-md {
   height: 7vmin;
-}
-
-.grid {
-  padding: 5%;
 }

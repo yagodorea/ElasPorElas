@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content class="masters">
-  <ion-grid>
+  <ion-grid style="padding: 0;">
     <ion-row justify-content-center>
       <ion-list style="top: 10vw; max-width: 100vh;">
         <ion-item sliding *ngFor="let cargo of cargosList" (click)="goToList(cargo)">
@@ -14,3 +14,9 @@
     </ion-row>
   </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <div align="center" style="background-color: #3f1e66;">
+    <img src="../../assets/imgs/Logo_elasporelas.png" class="footer-img" />
+  </div>
+</ion-footer>

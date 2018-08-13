@@ -1,7 +1,8 @@
 .fonte-candidatas {
-  font-family: PantonBlackCaps !important;
+  font-family: GothamBold !important;
+  letter-spacing: -1px;
+  text-transform: uppercase;
   text-align: start;
-  padding-inline-start: 10%;
   color: map-get($colors, primary);
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -9,29 +10,47 @@
 }
 
 .fonte-candidatas:hover {
-  font-family: PantonBlackCaps !important;
+  font-family: GothamBold !important;
+  letter-spacing: -1px;
+  text-transform: uppercase;
   font-size: 5vmin;
   text-align: start;
-  padding-inline-start: 10%;
   color: map-get($colors, primary);
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
-.item-md,.item-ios,.item-wp {
+.centerimg {
+  img {
+    float: left;
+    float: right;
+    height: 16vmin;
+    width: 16vmin;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.item-md,
+.item-ios,
+.item-wp {
   h1 {
     font-size: 4vmin;
   }
 }
 
-.item-md:hover,.item-ios:hover,.item-wp:hover {
+.item-md:hover,
+.item-ios:hover,
+.item-wp:hover {
   background-color: #c0aec6;
 }
 
 .list {
   width: 100%;
-}
-
-.grid {
-  padding: 0;
 }

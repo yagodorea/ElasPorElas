@@ -1,15 +1,27 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title class="titulo-nav">{{estado}} - {{cargo}}</ion-title>
+    <ion-title class="titulo-nav">{{estado}}</ion-title>
   </ion-navbar>
+  <div align=center style="background-color:#ca6faa;">
+    <div class="subtitulo-nav">{{cargo}}</div>
+  </div>
 </ion-header>
 <ion-content class="masters">
-  <ion-grid>
+  <ion-grid style="padding: 0;">
     <ion-row justify-content-center>
       <ion-list style="top: 10vw; max-width: 100vh;">
         <div *ngIf="listaCandidatas.length > 0">
           <ion-item sliding *ngFor="let candidata of listaCandidatas" (click)="verCandidata(candidata)">
-            <h1 class="fonte-candidatas">{{candidata.nome}} - {{candidata.numero}}</h1>
+            <ion-row>
+              <ion-col col-3>
+                <div align="center" class="centerimg">
+                  <img src="{{candidata.foto_url}}"/>
+                </div>
+              </ion-col>
+              <ion-col col-9>
+                <h1 class="fonte-candidatas">{{candidata.nome}} - {{candidata.numero}}</h1>
+              </ion-col>
+            </ion-row>
           </ion-item>
         </div>
         <ion-item *ngIf="listaCandidatas.length < 1">
@@ -18,5 +30,11 @@
       </ion-list>
     </ion-row>
   </ion-grid>
-
 </ion-content>
+
+<ion-footer>
+    <div align="center" style="background-color: #3f1e66;">
+      <img src="../../assets/imgs/Logo_elasporelas.png" class="footer-img"/>
+    </div>
+  </ion-footer>
+  

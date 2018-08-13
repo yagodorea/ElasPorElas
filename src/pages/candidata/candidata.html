@@ -2,18 +2,24 @@
   <ion-navbar color="primary">
     <ion-title class="titulo-nav">{{candidata.nome}}</ion-title>
   </ion-navbar>
+  <div align=center style="background-color:#ca6faa;">
+    <div class="subtitulo-nav">{{candidata.cargo}}</div>
+  </div>
 </ion-header>
 
 <ion-content class="masters">
-  <ion-grid style="max-width: 100vh;">
+  <ion-grid style="max-width: 100vh; padding: 3%;">
     <ion-row>
-      <ion-col col-4>
+      <ion-col col-6>
         <img src="{{candidata.foto_url}}" (click)=showImage(candidata.foto_url)/>
       </ion-col>
-      <ion-col col-8>
+      <ion-col col-6>
+        <div align=center style="padding-top: 8vmin;">
+          <div align="center" class="numero-container">
+            <p class="numero"> {{candidata.numero}} </p>
+          </div>
+        </div>
         <p class="descricao">{{candidata.nome}}</p>
-        <p class="descricao">{{candidata.numero}}</p>
-        <p class="descricao">{{candidata.cargo}}</p>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -23,17 +29,31 @@
     </ion-row>
     <ion-row>
       <ion-col col-3>
-        <button (click)="openPage(candidata.website)" ion-button block><ion-icon name="globe"></ion-icon></button>
+        <button (click)="openPage(candidata.website)" ion-button block>
+          <ion-icon name="globe"></ion-icon>
+        </button>
       </ion-col>
       <ion-col col-3>
-        <button (click)="openPage(candidata.facebook)" ion-button block><ion-icon name="logo-facebook" size="large"></ion-icon></button>
+        <button (click)="openPage(candidata.facebook)" ion-button block>
+          <ion-icon name="logo-facebook" size="large"></ion-icon>
+        </button>
       </ion-col>
       <ion-col col-3>
-        <button (click)="openPage(candidata.twitter)" ion-button block ><ion-icon name="logo-twitter"></ion-icon></button>
+        <button (click)="openPage(candidata.twitter)" ion-button block>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
       </ion-col>
       <ion-col col-3>
-        <button (click)="openPage(candidata.instagram)" ion-button block><ion-icon name="logo-instagram"></ion-icon></button>
+        <button (click)="openPage(candidata.instagram)" ion-button block>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </button>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <div align="center" style="background-color: #3f1e66;">
+    <img src="../../assets/imgs/Logo_elasporelas.png" class="footer-img" />
+  </div>
+</ion-footer>

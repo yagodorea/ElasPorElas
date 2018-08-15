@@ -30,6 +30,10 @@
   font-family: GothamBold !important;
 }
 
+.bar-button {
+  z-index: 3;
+}
+
 .platform-ios .toolbar-title {
   margin-left: 0;
   font-size: 1.4rem;
@@ -46,11 +50,11 @@
 }
 
 .subtitulo-nav {
-  padding-top: 2px;
+  padding-top: 5px;
   text-align: center;
   text-transform: uppercase;
   height: 3rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   font-family: GothamBold !important;
 }
@@ -74,4 +78,9 @@
 @font-face {
   font-family: GothamBold;
   src: url('../assets/fonts/GothamBlack.otf');
+} 
+
+@font-face {
+  font-family: GothamMedium;
+  src: url('../assets/fonts/GothamMedium.ttf');
 } 

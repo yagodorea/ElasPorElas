@@ -9,7 +9,7 @@
 
 .numero {
   font-family: GothamBold !important;
-  font-size: 6vmin;
+  font-size: 8vmin;
   text-align: center;
   margin: 1vw;
   color: white;
@@ -17,13 +17,14 @@
 
 .numero-container {
   background-color: #3f1e66;
-  border-radius: 4vmin;
+  border-radius: 8vmin;
   display: inline-block;
   padding: 0 4vmin;
 }
 
 .innerDescricao {
-  font-family: GothamBold !important;
+  font-family: GothamMedium !important;
+  line-height: 1.5em;
   font-size: 4vmin;
   text-align: left;
   color: #505050;

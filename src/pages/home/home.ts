@@ -21,17 +21,17 @@ export class HomePage {
       spinner: 'dots'
     });
     this.loading.present();
-    listaService.fetchList(this.callback,this.loading);
+    listaService.fetchList(this.callback, this.loading);
   }
 
   callback(loading) {
-    if(loading) {
+    if (loading) {
       loading.dismiss();
     }
   }
 
   showClicked(state) {
     console.log('stateClicked = ' + state);
-    this.navCtrl.push(CargosPage,{estado: state});
+    this.navCtrl.push(CargosPage, { estado: state });
   }
 }

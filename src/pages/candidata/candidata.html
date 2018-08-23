@@ -9,17 +9,19 @@
 
 <ion-content class="masters">
   <ion-grid style="max-width: 100vh; padding: 3%;">
-    <ion-row>
+    <ion-row align-items-center>
       <ion-col col-6>
-        <img src="{{candidata.foto_url}}" (click)=showImage(candidata.foto_url)/>
+        <div align=center>
+          <img src="{{candidata.foto_url}}" (click)=showImage(candidata.foto_url)/>
+        </div>
       </ion-col>
       <ion-col col-6>
-        <div align=center style="padding-top: 8vmin;">
-          <div align="center" class="numero-container">
+        <div align=center>
+          <div class="numero-container">
             <p class="numero"> {{candidata.numero}} </p>
           </div>
+          <p class="descricao">{{candidata.nome}}</p>
         </div>
-        <p class="descricao">{{candidata.nome}}</p>
       </ion-col>
     </ion-row>
     <ion-row>

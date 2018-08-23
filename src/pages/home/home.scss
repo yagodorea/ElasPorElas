@@ -1,9 +1,13 @@
+
 .mapa-container {
   position: absolute;
   left: 0;
   width: 100vw;
   height: auto;
   align-items: center;
+  svg {
+    transition: .3s ease-out;
+  }
 }
 
 ::-webkit-scrollbar,

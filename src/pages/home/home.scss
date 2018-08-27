@@ -37,6 +37,41 @@
   }
 }
 
+.menu-estados {
+  padding-top: 20px;
+}
+
+.item-estados {
+  width: 100%;  
+  padding-inline-start: 30px;
+  padding-top: 0;
+  p {
+    margin: 0;
+    line-height: 200%;
+    transition: .2s ease-in;
+    font-family: GothamBold !important;
+    color: black;
+  }
+}
+
+.fab {
+  color: map-get($colors, primary);
+  background-color: transparent;
+}
+
+.fabhidden {
+  visibility: hidden;
+}
+
+.item-estados:hover {
+  p {
+    transition: .2s ease-out;
+    margin-inline-start: 30px;
+    font-family: GothamBold !important;
+    color: #432a70;
+  }
+}
+
 .estado-vermelho {
   fill: #a61f46;
   fill-opacity: 1;

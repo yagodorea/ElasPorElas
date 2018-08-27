@@ -1,5 +1,21 @@
-<ion-content align="center" padding class="masters">
+<ion-menu [content]="mycontent">
+  <ion-content style="background-color: #f5dffc; padding-top: 20px;">
+    <ion-list class="menu-estados">
+      <ion-item class="item-estados" (click)="showClicked(estado)" *ngFor="let estado of listaEstados">
+        <p>{{estado}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
+<ion-nav #mycontent [root]="page-home"></ion-nav>
+
+<ion-content padding class="masters">
+  <ion-fab [class.fabhidden]="menuCtrl.isOpen()" top left>
+    <button ion-fab menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-fab>
   <div align=center class="mapa-container">
     <div align="center" class="titulooo">
       <img src="../../assets/imgs/titulo_01.png" style="padding: 0; max-width: 480px; width: 80%;" />

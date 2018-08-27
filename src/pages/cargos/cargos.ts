@@ -17,6 +17,10 @@ export class CargosPage {
     public navCtrl: NavController, 
     public navParams: NavParams) {
     this.estado = navParams.get('estado');
+    if (this.estado == 'Distrito Federal') {
+      // Substituir 'Deputada Estadual' por 'Deputada Distrital'
+      this.cargosList[this.cargosList.indexOf('Deputada Estadual')] = 'Deputada Distrital';
+    }
   }
 
   goToList(post) {

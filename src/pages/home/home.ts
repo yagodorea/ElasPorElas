@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { NavController, LoadingController, Loading, Content, Gesture, ToastController } from 'ionic-angular';
+import { NavController, LoadingController, Loading, Content, Gesture, ToastController, MenuController } from 'ionic-angular';
 import { CargosPage } from '../cargos/cargos';
 import { ListaService } from '../../providers/lista-service';
 
@@ -10,6 +10,14 @@ import { ListaService } from '../../providers/lista-service';
 export class HomePage {
   @ViewChild(Content) content: Content;
   @ViewChild('zoom') zoom: ElementRef;
+  @ViewChild('fabMenu') fabMenu: ElementRef;
+
+  listaEstados = [
+    "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo",
+    "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba",
+    "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Sul", "Rondônia",
+    "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"
+  ]
 
   loading: Loading;
   gesture: Gesture;
@@ -38,8 +46,10 @@ export class HomePage {
     public navCtrl: NavController,
     public listaService: ListaService,
     public loadingCtrl: LoadingController,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public menuCtrl: MenuController
   ) {
+
     this.myTransform = 'scale3d(1,1,1);';
 
     this.loading = loadingCtrl.create({
